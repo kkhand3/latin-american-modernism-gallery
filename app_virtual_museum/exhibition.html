@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exhibition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="exhibition-page">
+
+  <div class="center-content">
+    <h1>Welcome to the Exhibition</h1>
+    <p><strong>Select a movement or era from the dropdown menu to explore related artworks</strong>.</p>
+
+    <!-- 🔽 Dropdown and Sections START -->
+    <div style="text-align: center; margin: 20px;">
+    <label for="era-select"><strong>Select an era or movement:</strong></label>
+    <select id="era-select" onchange="showEra(this.value)">
+      <option value="">--Choose an era or movement--</option>
+      <option value="The-Nineteenth-Century">The Nineteenth Century</option>
+      <option value="Modernismo">Modernismo</option>
+      <option value="The-Avant-Garde">The Avant-Garde</option>
+      <option value="Surrealism-in-Argentina-and-Mexico">Surrealism in Argentina and Mexico</option>
+      <option value="Surrealism-in-The-Caribbean">Surrealism in The Caribbean</option>
+      <option value="Abstraction">Abstraction</option>
+      <option value="Museums, Biennials and Architecture">Museums and Biennials</option>
+      <option value="Op-Art-and-Beyond">Op-Art and Beyond</option>
+    </select>
+    </div>
+
+    <div id="The-Nineteenth-Century" class="era-section" style="display:none; margin-top: 20px;">
+      <h2>The Nineteenth Century</h2>
+      <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.16.25%20AM.png?v=1747315293678" alt="The Nineteenth Century artwork">
+      <p><strong>Caption:</strong> Holguin, Virgen de la Leche (Virgin of the Milk), 1710-20 </p>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.16.42%20AM.png?v=1747315300109" alt="Second artwork from The Nineteenth Century">
+  <p><strong>Caption:</strong> Jean Baptiste Debret, Landing of the Dona Leopoldina, 1816</p>
+</div>
+
+    <div id="Modernismo" class="era-section" style="display:none; margin-top: 20px;">
+  <h2>Modernismo</h2>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.27.59%20AM.png?v=1747315705789" alt="Modernismo artwork 1">
+  <p><strong>Caption:</strong> Julio Ruelas, El Ahorcado(The Hangman),1897</p>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.30.19%20AM.png?v=1747315841808" alt="Modernismo artwork 2">
+  <p><strong>Caption:</strong> Saturnino Herran, The Offering, 1913</p>
+</div>
+    
+    <div id="The-Avant-Garde" class="era-section" style="display:none; margin-top: 20px;">
+  <h2>The Avant-Garde</h2>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.31.45%20AM.png?v=1747315979514" alt="The Avant-Garde artwork 1">
+  <p><strong>Caption:</strong> Diego Rivera, Zapatista Landscape, 1915</p>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.32.41%20AM.png?v=1747315988163E" alt="The Avant-Garde artwork 2">
+  <p><strong>Caption:</strong> Anita Malfatti, The Fool, 1915-1916</p>
+</div>
+    
+    <div id="Social-Ideological-and-Nativist-Art" class="era-section" style="display:none; margin-top: 20px;">
+  <h2>Social, Ideological, and Nativist Art</h2>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.34.17%20AM.png?v=1747316145740" alt="Social, Ideological, and Nativist Art artwork 1">
+  <p><strong>Caption:</strong> Orozco, The Struggle of the Occident, 1931</p>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.35.34%20AM.png?v=1747316152736" alt="Social, Ideological, and Nativist Art artwork 2">
+  <p><strong>Caption:</strong> Siqueiros, Peasant Mother, 1929 </p>
+</div>
+    
+    <div id="Surrealism-in-Argentina-and-Mexico" class="era-section" style="display:none; margin-top: 20px;">
+  <h2>Surrealism in Argentina and Mexico</h2>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.36.55%20AM.png?v=1747316294533" alt="Surrealism in Argentina and Mexico artwork 1">
+  <p><strong>Caption:</strong> Rufino Tamayo, Bailarina en la Noche, 1946</p>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.37.44%20AM.png?v=1747316303629" alt="Surrealism in Argentina and Mexico artwork 2">
+  <p><strong>Caption:</strong> Frida Kahlo, The Two Fridas, 1939</p>
+</div>
+    
+    <div id="Surrealism-in-The-Caribbean" class="era-section" style="display:none; margin-top: 20px;">
+  <h2>Surrealism in The Caribbean</h2>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.40.05%20AM.png?v=1747316453822" alt="Surrealism in The Caribbean artwork 1">
+  <p><strong>Caption:</strong> Wilfredo Lam, The Chair, 1942 </p>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.40.42%20AM.png?v=1747316461228" alt="Surrealism in The Caribbean artwork 2">
+  <p><strong>Caption:</strong> Carlos Enriquez, Bandolero Criollo, 1943
+</p>
+</div>
+    
+    <div id="Abstraction" class="era-section" style="display:none; margin-top: 20px;">
+  <h2>Abstraction</h2>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.42.24%20AM.png?v=1747316665642" alt="Abstraction artwork 1">
+  <p><strong>Caption:</strong> Torres-Garcia, Construction in White and Black, 1938</p>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.44.08%20AM.png?v=1747316671040" alt="Abstraction artwork 2">
+  <p><strong>Caption:</strong> Marcelo Bonevardi, Private Chamber, 1966 </p>
+</div>
+    
+    <div id="Museums-and-Biennials" class="era-section" style="display:none; margin-top: 20px;">
+  <h2>Museums, Biennials and Architecture</h2>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.45.55%20AM.png?v=1747316841688" alt="Museums and Biennials artwork 1">
+  <p><strong>Caption:</strong> Francisco Toledo, Tortuga poniendo huevos (Turtle Laying Eggs), 1973 </p>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.46.46%20AM.png?v=1747316848387" alt="Museums and Biennials artwork 2">
+  <p><strong>Caption:</strong> Juan O’Gorman, Studio for Diego Rivera, 1930</p>
+</div>
+    
+    <div id="Op-Art-and-Beyond" class="era-section" style="display:none; margin-top: 20px;">
+  <h2>Op-Art and Beyond</h2>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.49.48%20AM.png?v=1747317057554" alt="Op-Art and Beyond artwork 1">
+  <p><strong>Caption:</strong> Jesus Soto, Houston Penetrable, 2004-2014 </p>
+  <img src="https://cdn.glitch.global/7e5b640d-4d88-435f-95e7-098461131f99/Screen%20Shot%202025-05-15%20at%208.50.30%20AM.png?v=1747317066288" alt="Op-Art and Beyond artwork 2">
+  <p><strong>Caption:</strong> Chromosaturation, 2010</p>
+</div>
+    
+    <script>
+    function showEra(eraId) {
+      const sections = document.querySelectorAll(".era-section");
+      sections.forEach(section => section.style.display = "none");
+      if (eraId) {
+        document.getElementById(eraId).style.display = "block";
+      }
+    }
+    </script>
+
+    <div class="arrow-nav">
+      <a href="index.html" class="arrow left">←</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
